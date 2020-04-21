@@ -15,7 +15,7 @@ class singleton
 
     private function __construct()
     {
-       // TODO: 构造函数
+        // TODO: 构造函数
     }
 
     public static function getInstance()
