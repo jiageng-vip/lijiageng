@@ -1,6 +1,6 @@
 <?php
 /**
- * single.php
+ * singleton.php
  *
  * User Jiageng
  * Describe 设计模式-单例模式-三私一公
@@ -9,7 +9,7 @@
  * Time 1:33 下午
  */
 
-class single
+class singleton
 {
     private static $instance;
 
@@ -20,8 +20,8 @@ class single
 
     public static function getInstance()
     {
-        if (!self::$instance instanceof single) {
-            self::$instance = new single();
+        if (!self::$instance instanceof singleton) {
+            self::$instance = new singleton();
         }
 
         return self::$instance;
@@ -38,8 +38,8 @@ class test
 
 }
 
-$single = single::getInstance();
-$single1 = single::getInstance();
+$single = singleton::getInstance();
+$single1 = singleton::getInstance();
 $test = new test();
 
 var_dump($single);
