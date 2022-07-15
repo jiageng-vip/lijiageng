@@ -27,6 +27,7 @@ services:
     ports:
       - "80:80"
       - "443:443"
+      - "9998:9998"
     volumes:
       - /Users/lijiageng/work/duomei:/data01
       - ./nginx/config/nginx.conf:/etc/nginx/nginx.conf

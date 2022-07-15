@@ -1,0 +1,1 @@
+* * * * * /usr/local/bin/php /data01/api.console.insurforce.cn/artisan schedule:run
