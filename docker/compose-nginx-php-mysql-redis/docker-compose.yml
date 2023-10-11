@@ -4,7 +4,7 @@ services:
   php74:
     container_name: php7.4
 #    build: ./php
-    image: php:7.4-fpm-redis-swoole-xdebug
+    image: php:7.4-fpm-redis-xdebug
     tty: true
     restart: always
     expose:
